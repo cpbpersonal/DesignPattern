@@ -9,7 +9,7 @@ public class ChainHandler {
         Handler level2=new Boss();
         level1.setHandler(level2);
 
-        level1.processor(8);
+        //level1.processor(8);
         level1.processor(11);
     }
 }
@@ -24,8 +24,7 @@ public class ChainHandler {
     }
 
     class Leader extends  Handler{
-
-
+        @Override
         public void processor(int info) {
             if (info>0&&info<10){
                 System.out.println("leader 处理了");
@@ -38,6 +37,7 @@ public class ChainHandler {
 
     class  Boss extends  Handler{
 
+        @Override
         public void processor(int info) {
             if (info>10){
                 System.out.println("Boss 处理");
