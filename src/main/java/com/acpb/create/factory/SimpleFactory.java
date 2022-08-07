@@ -2,6 +2,7 @@ package com.acpb.create.factory;
 
 
 //简单工厂模式，根据类型直接创建出对应的对象。
+
 public class SimpleFactory {
     public static void main(String[] args) {
         DoorFactory doorFactory = new DoorFactory();
@@ -17,6 +18,7 @@ public class SimpleFactory {
 class DoorFactory{
    public DoorFactory(){
     }
+    // 只能创建同一大类的东西，每当新增一种类型就要创建新的工厂，
     public Door getDoor(float width,float high,String type){
         if (type=="WoodDoor"){
             return new WoodDoor(width,high);
