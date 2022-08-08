@@ -1,5 +1,7 @@
 package com.acpb.create.single;
-
+/**
+ * double check lock
+ */
 public class Lazy5 {
   private Lazy5(){};
   private volatile static Lazy5 lazy5;

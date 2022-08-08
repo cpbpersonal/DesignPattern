@@ -8,8 +8,12 @@ public class Lazy3 {
     public static Lazy3 getinstance(){
         if(lazy3==null){
             synchronized (Lazy2.class){
-                if (lazy3==null){lazy3=new Lazy3();} }
-        }return lazy3;
+                if (lazy3==null){
+                    lazy3=new Lazy3();
+                }
+            }
+        }
+        return lazy3;
     }
     public static void main(String[] args) throws Exception {
         //反射拿到类的构造器设置为可改变，通过类的构造器直接创建出多个对象

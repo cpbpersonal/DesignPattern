@@ -1,7 +1,8 @@
 package com.acpb.create.single;
 
 public class Lazy1 {
-    private Lazy1 (){//构造器私有化，创建对象时调用构造器输出当前线程
+    private Lazy1 (){
+        //构造器私有化，创建对象时调用构造器输出当前线程
         System.out.println(Thread.currentThread().getName());
     }
     private static Lazy1 lazy1;
