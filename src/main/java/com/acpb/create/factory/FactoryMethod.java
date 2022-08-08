@@ -1,5 +1,8 @@
 package com.acpb.create.factory;
 
+/**
+ * 工厂方法
+ */
 public class FactoryMethod {
     public static void main(String[] args) {
         WoodenDoorFactory woodenDoorFactory = new WoodenDoorFactory();
