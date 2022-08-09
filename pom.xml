@@ -26,5 +26,17 @@
         <artifactId>cglib</artifactId>
         <version>3.1</version>
     </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>RELEASE</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>RELEASE</version>
+        <scope>compile</scope>
+    </dependency>
 </dependencies>
 </project>
